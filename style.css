@@ -26,20 +26,20 @@ header {
 }
 
 form  {
-   width:285px;
+   margin: 0 auto;
+   
    margin:auto;
    margin-top: 0.03em;
    box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
    margin-bottom: 30px;
    border-radius: 10px;
-   
    }
    input{
       font-size:16px;
    }
    .search {
-      width: 75%;
-      float: left;
+      width:40em;
+      float: auto;
       border-radius: 10px;
    }
    .submit1{
@@ -208,24 +208,27 @@ footer {
 .footer-col:last-child {
    text-align: right;
 }
+@media (max-width: 870px) {
+   .search {
+      width:20em;
+   }
+   .products-clearfix{
+      column-gap: 9em;
+   }
+   .post-image2, .post-image1, .post-image3{
+      width: 125px;
+   }
+   .widget-title{
+      margin-bottom: 10px;
+   }
+}
 @media (max-width: 768px) {
+   
    header {
-      padding: 10px 0;
+      padding: 10px ;
    }
    .products-clearfix{
       column-gap: 5em;
-   }
-   #menu {
-      max-height: 0;
-      float: none;
-      position: absolute;
-      overflow: hidden;
-      top: 63px;
-      right: 0;
-      left: 0;
-      margin: 0;
-      padding: 0;
-      z-index: 3;
    }
    #menu li {
       display: block;
@@ -243,6 +246,14 @@ footer {
 }
 
 @media (max-width: 480px) {
+   nav .container1{
+      height: 0em;
+      border-radius: 0em;
+      width: 0em;
+      padding: 0px;
+      border: 0px ;
+      margin: 0;
+   }
    .products-clearfix{
       column-gap: 0em;
       column-fill: auto;
@@ -255,6 +266,7 @@ footer {
       float: none;
       margin: 0 auto 15px;
       display: table;
+      
    }
 
    #menu {
